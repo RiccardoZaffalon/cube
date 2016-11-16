@@ -1,0 +1,11 @@
+#header.is-scrolled {
+	box-shadow: 0 0 30px rgba(0,0,0,0.1);
+
+	.nav--main-nav {
+		padding: 30px 0;
+	}
+}
+
+nav ul.nav--nav-list > li > a.active {
+	border-bottom: 2px solid $color-2;
+}

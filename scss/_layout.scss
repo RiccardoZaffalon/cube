@@ -1,0 +1,176 @@
+.container {
+	width: 90%;
+	max-width: 1070px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+@import 'toast';
+
+/*
+.section-split .wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-left,
+.section-right {
+	flex: 1;
+}
+
+.footer-list--container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav--main-nav {
+	display: flex;	
+	justify-content: space-between;
+}
+
+.clients--row {
+	display: flex;
+}
+
+.client {
+	padding-right: 90px;
+	display: flex;
+}*/
+
+
+.section-split .row {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+// Fixed menu
+
+body {
+	padding-top: 90px;
+}
+
+#header {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	right: 0;
+	width: 100%;
+	background-color: white;
+}
+
+section {
+	position: relative;
+}
+
+.nav--main-nav {
+	transition: all 300ms ease;
+	padding: 60px 0;
+}
+
+.section-image {
+	height: 600px;
+	display: flex;
+	align-items: center;
+}
+
+.section-left.section-image img {
+	margin-left: -60px;
+}
+
+.section-right.section-image img {
+	margin-right: -60px;
+}
+
+.nav--nav-list-item {
+	display: inline-block;
+	margin-left: 60px;
+}
+
+.nav--nav-list {
+	text-align: right
+}
+
+.features-list.row {
+	//margin-left: 0;
+	align-items: flex-start;
+}
+
+#clients {
+	padding: 60px 0 120px;
+}
+
+.client--data {
+	display: flex;
+	justify-content: space-between;
+}
+
+#newsletter {
+	height: 450px;
+	background-image: url("../images/newsletter.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#footer {
+	padding: 120px 0;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+
+	.no-mobile {
+		display: none;
+	}
+
+	.section-split .row {
+		display: block;
+	}
+
+	#newsletter.section-split .row {
+		display: flex;
+	}
+
+	.section-image {
+		height: 480px;
+		justify-content: center;
+	}
+
+	.section-left.section-image img {
+		margin-left: 0px;
+	}
+
+	.section-right.section-image img {
+		margin-right: 0px;
+	}
+	#features {
+		padding: 120px 0 60px 0;
+	}
+	.client--photo-wrapper {
+		display: inline-block;
+	}
+	.dark-filter {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.3);
+	}
+	.dark-filter + .container {
+		position: relative;
+	}
+	.footer-list {
+		padding-bottom: 60px;
+	}
+	.copyright {
+		margin-top: 0px;
+	}
+}
