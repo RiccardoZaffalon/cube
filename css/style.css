@@ -669,7 +669,7 @@ section {
   padding: 120px 0; }
 
 /* Responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .no-mobile {
     display: none; }
 
